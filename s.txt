@@ -1,0 +1,48 @@
+docker build -t calculatorjava .
+docker images
+docker tag calculatorjava shobitha22/clacapp:v1.0
+docker images
+docker login 
+docker push shobitha22/clacapp:v1.0
+
+docker build -t shobitha22/helloapp:v1.0
+docker images
+docker push shobitha22/helloapp:v1.0
+
+docker rmi shobitha22/helloapp:v1.0    to remove or 
+docker pull shobitha22/helloapp
+d imagrs
+d run shobitha22/helloapp
+
+
+
+
+git add Jenkinsfile
+git commit -m "Added Jenkins pipeline"
+git push
+
+Then push it to GitHub.    cd C:\Users\YourName\dockerdemo1
+
+git status
+git add index.html
+git commit -m "Added index.html"
+git push
+
+
+Then you didn’t initialize Git yet.
+Run:
+git init
+git remote add origin https://github.com/Shobitha22/dockerdemo1.git
+git branch -M main
+Then run:
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+
+
+docker --version
+docker build -t dockerdemo1 .
+docker run -d -p 8080:80 --name dockerdemo1-container dockerdemo1
+docker login
+docker tag dockerdemo1 shobitha22/dockerdemo1:latest
+docker push shobitha22/dockerdemo1:latest
